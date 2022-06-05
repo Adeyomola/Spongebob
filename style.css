@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+#face {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(5, auto);
+    width: 18%;
+    height: 40%;
+    background-color: gold;
+    margin: auto;
+    transform: translateY(70%);
+}
+
+.brows {
+    width: 2%;
+    height: 6%;
+    background-color: black;
+    position: absolute;
+    top: 15%;
+}
+
+#brow1 {
+    left: 28%;
+    transform: skewX(10deg);
+    top: 16.5%;
+}
+
+#brow2 {
+    left: 33%;
+    top: 15.5%;
+}
+
+#brow3 {
+    left: 38%;
+    transform: skewX(-10deg);
+    top: 16.5%;
+}
+
+#brow4 {
+    right: 28%;
+    transform: skewX(-10deg);
+    top: 16.5%;
+}
+
+#brow5 {
+    right: 33%;
+    top: 15.5%;
+}
+
+#brow6 {
+    right: 38%;
+    transform: skewX(10deg);
+    top: 16.5%;
+}
+
+#eye1 {
+    width: 100%;
+    height: 150%;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: 65px;
+    left: 50px;
+    grid-column: 1/3;
+}
+
+#iris1 {
+    background-color: lightseagreen;
+    border-radius: 50%;
+    width: 50%;
+    height: 55%;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+#pupil1 {
+    background-color: black;
+    border-radius: 50%;
+    width: 50%;
+    height: 55%;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+
+#eye2 {
+    width: 100%;
+    height: 150%;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: 65px;
+    right: 0px;
+    grid-column: 4/6;
+}
+
+#iris2 {
+    background-color: lightseagreen;
+    border-radius: 50%;
+    width: 50%;
+    height: 55%;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+
+#pupil2 {
+    background-color: black;
+    border-radius: 50%;
+    width: 50%;
+    height: 55%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+#cheek1 {
+    grid-column: 1/2;
+    background-color: gold;
+    position: relative;
+    top: 80px;
+    left: 45px;
+    width: 50%;
+    height: 20%;
+    transform: rotate(-25deg);
+    border-radius: 10px 10px 0 0;
+    border: 1px solid rgba(255, 0, 0, 0.358);
+    border-bottom: 0;
+}
+
+#cheek2 {
+    grid-column: 5/6;
+    background-color: gold;
+    position: relative;
+    top: 80px;
+    left: 30px;
+    width: 50%;
+    height: 20%;
+    transform: rotate(10deg);
+    border-radius: 10px 10px 0 0;
+    border: 1px solid rgba(255, 0, 0, 0.358);
+    border-bottom: 0;
+}
+
+#nose {
+    grid-column: 3/4;
+    background-color: gold;
+    border: 1px solid black;
+    border-bottom: 0;
+    border-left: 0;
+    position: relative;
+    top: 70px;
+    left: 40px;
+    width: 40%;
+    height: 35%;
+    border-radius: 80% 80% 70% 70% / 60% 60% 90% 90%;
+}
+
+#mouth {
+    grid-column: 1/span 6;
+    width: 60%;
+    height: 40px;
+    position: absolute;
+    top: 135px;
+    left: 60px;
+    border: 1px solid black;
+    border-radius: 0 0 100% 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#tooth1 {
+    background-color: white;
+    border: 1px solid black;
+    width: 8%;
+    height: 15px;
+    position: absolute;
+    top: 39px;
+    left: 65px;
+    z-index: -1;
+    transform: rotate(2deg);
+}
+
+#tooth2 {
+    background-color: white;
+    border: 1px solid black;
+    width: 8%;
+    height: 15px;
+    position: absolute;
+    top: 39px;
+    left: 85px;
+    z-index: -1;
+    transform: rotate(-2deg);
+}
+
+#chin1 {
+    grid-column: 1/3;
+    background-color: gold;
+    position: relative;
+    top: 85px;
+    left: 125px;
+    width: 20%;
+    height: 8%;
+    border-radius: 0 0 80px 80px;
+    border: 1px solid rgba(255, 0, 0, 0.358);
+    border-top: 0;
+}
+
+#chin2 {
+    grid-column: 4/6;
+    background-color: gold;
+    position: relative;
+    top: 85px;
+    right: -3px;
+    width: 20%;
+    height: 8%;
+    border-radius: 0 0 80px 80px;
+    border: 1px solid rgba(255, 0, 0, 0.358);
+    border-top: 0;
+}
